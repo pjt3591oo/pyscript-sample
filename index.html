@@ -3,12 +3,22 @@
 
 <head>
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+    <style>
+      ul > li > a {
+        color: #0023ff;
+      }
+      div.menu{
+        margin: 25px 75px 25px 75px;
+      }
+    </style>
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 
 <body>
-  <div>
+  <div class="menu">
+    <h3>메뉴</h3>
     <ul>
+      <li><a href="./repl.html" id="link">repl</a></li>
       <li><a href="./loop.html" id="link">loop</a></li>
       <li><a href="./pandas.html" id="link">pandas</a></li>
       <li><a href="./plot.html" id="link">plot</a></li>
@@ -18,7 +28,7 @@
     </ul>
   </div>
   
-  <div>
+  <div >
     <h1>잠시 후 파이썬 코드에 의해 hello world를 출력합니다.</h1>
     <py-script>
 from datetime import datetime 
